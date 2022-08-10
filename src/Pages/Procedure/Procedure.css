@@ -1,0 +1,44 @@
+.p-r-cardlist > * {
+  width: 8rem;
+  height: 4rem;
+}
+.p-r-cardlist > div > * {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.p-r-cardlist > :nth-child(1) {
+  margin-top: 4rem;
+}
+.p-r-cardlist > :nth-child(2) {
+  margin-top: -8rem;
+}
+.p-r-cardlist > :nth-child(3) {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .p-r-cardlist > * {
+    width: auto;
+  }
+  .p-r-cardlist > :nth-child(1) {
+    margin-top: 0rem;
+  }
+  .p-r-cardlist > :nth-child(2) {
+    margin-top: 0rem;
+  }
+  .p-r-cardlist > :nth-child(3) {
+    margin-top: 0rem;
+  }
+  .p-r-cardlist > :nth-child(4) {
+    margin-top: 4rem;
+  }
+  .p-r-cardlist > :nth-child(5) {
+    margin-top: -8rem;
+    box-shadow: 0px 0px 25px var(--blueCard);
+  }
+  .p-r-cardlist > :nth-child(6) {
+    margin-top: 4rem;
+  }
+}

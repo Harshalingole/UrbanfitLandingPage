@@ -1,38 +1,107 @@
-.App {
+:root {
+  --bodyback: #171a26;
+  --brandClr: #99ff33;
+  --bgcard: #2f313c;
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid */
+.grid-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+  align-items: flex-start;
+  grid-gap: 2rem;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 2fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+/* Button */
+.button {
+  border-radius: 1.1rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0, 0.42);
+}
+.button:hover {
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+/* Common Css For Card */
+.card-col-2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Why */
+.w-c-subtitle {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 1rem;
   color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background: var(--bgcard);
+  /* border: 1px solid var(--brandClr);
+  box-shadow: 2px 2px 2px var(--brandClr); */
+  border-left: 4px solid var(--brandClr);
+  box-shadow: 5px 5px 5px var(--gray);
+  text-align: center;
+}
+.w-c-subtitle:hover {
+  border: 1px solid var(--gray);
+  box-shadow: 5px 5px 5px var(--brandClr);
+}
+.why-card {
+  border-left: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* Location */
+.l-c-subtitle {
+  border-radius: 0.25rem;
+  border-left: 10px solid var(--black);
+  box-shadow: 2px 2px 5px var(--gray);
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Franchise Vision */
+.vision-card {
+  height: 20rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 15px var(--blueCard);
+  color: white;
+  background-color: #242d49;
+}
+
+/* Procedure */
+.procedure-card {
+  box-shadow: 0px 5px 0px var(--blueCard);
+  border-left: none;
+}
+.procedure-card:hover {
+  box-shadow: 0px 5px 0px var(--brandClr);
 }

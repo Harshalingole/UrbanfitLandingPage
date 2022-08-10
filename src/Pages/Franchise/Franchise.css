@@ -1,0 +1,26 @@
+.F-cardlist {
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.F-cardlist > :nth-child(1) {
+  margin-top: 4rem;
+}
+.F-cardlist > :nth-child(2) {
+  margin-top: -8rem;
+  box-shadow: 0px 0px 25px var(--blueCard);
+}
+.F-cardlist > :nth-child(3) {
+  margin-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .F-cardlist > :nth-child(1) {
+    margin-top: 0rem;
+  }
+  .F-cardlist > :nth-child(2) {
+    margin-top: 0rem;
+  }
+  .F-cardlist > :nth-child(3) {
+    margin-top: 0rem;
+  }
+}
